@@ -25,7 +25,7 @@ jobs:
       - run: databricks bundle deploy
         env:
           DATABRICKS_TOKEN: ${{ secrets.DEMO_DAB_TOKEN }}
-          DATABRICKS_BUNDLE_ENV: production
+          DATABRICKS_BUNDLE_ENV: prod
 
   pipeline_update:
     name: "Run pipeline update"
