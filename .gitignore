@@ -1,2 +1,6 @@
 
 .databricks
+*.pyc
+*.json
+.vscode/settings.json
+.DS_Store
