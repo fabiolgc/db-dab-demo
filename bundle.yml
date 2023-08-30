@@ -60,7 +60,7 @@ environments:
             - level: CAN_VIEW
               group_name: users      
 
-  production:
+  prod:
     workspace:
       host: https://e2-demo-west.cloud.databricks.com/
     resources:
