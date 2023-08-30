@@ -27,7 +27,7 @@ jobs:
 
       - run: databricks bundle deploy
         env:
-          DATABRICKS_TOKEN: ${{ secrets.DEMO_DAB_TOKEN }}
+          DATABRICKS_TOKEN: ${{ secrets.E2_DEMO_WEST_TOKEN }}
           DATABRICKS_BUNDLE_ENV: qa
 
   pipeline_update:
@@ -56,7 +56,7 @@ jobs:
           set -o pipefail
           databricks bundle run medium_metrics_pipeline_fabio_goncalves --refresh-all 2>&1 | tee output.log
         env:
-          DATABRICKS_TOKEN: ${{ secrets.DEMO_DAB_TOKEN }}
+          DATABRICKS_TOKEN: ${{ secrets.E2_DEMO_WEST_TOKEN }}
           DATABRICKS_BUNDLE_ENV: qa
 
 #       - shell: bash
