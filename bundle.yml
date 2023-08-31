@@ -72,6 +72,7 @@ environments:
           development: false
           photon: true
           clusters:
+            policy_id: "DLT Policy"
             - autoscale:
                 min_workers: 2
                 max_workers: 8
