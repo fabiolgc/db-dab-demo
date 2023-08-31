@@ -59,7 +59,7 @@ jobs:
           DATABRICKS_TOKEN: ${{ secrets.DEMO_DAB_TOKEN }}
           DATABRICKS_BUNDLE_ENV: qa
 
-#       - shell: bash
+##       - shell: bash
 #         if: always()
 #         name: Emit annotations
 #         run: |
